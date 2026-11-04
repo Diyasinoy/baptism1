@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Holy Baptism Invitation - Zarah Mathew</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* Custom Fonts */
+    .font-script {
+      font-family: 'Alex Brush', cursive;
+    }
+    .font-serif-elegant {
+      font-family: 'Cormorant Garamond', serif;
+    }
+    .font-sans-clean {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    /* Custom Visual Effects & Glows - Updated for Blush Pink & Rose Gold */
+    .glow-effect {
+      box-shadow: 0 0 25px rgba(197, 141, 131, 0.45);
+    }
+    .glow-text {
+      text-shadow: 0 0 15px rgba(197, 141, 131, 0.5);
+    }
+
+    /* Custom Animations */
+    @keyframes float-slow {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-8px) rotate(2deg); }
+    }
+    @keyframes pulse-subtle {
+      0%, 100% { opacity: 0.8; transform: scale(1); filter: drop-shadow(0 0 8px rgba(197, 141, 131, 0.45)); }
+      50% { opacity: 1; transform: scale(1.04); filter: drop-shadow(0 0 18px rgba(197, 141, 131, 0.75)); }
+    }
+    @keyframes pulse-ring {
+      0% { transform: scale(0.95); opacity: 0.8; }
+      50% { transform: scale(1.05); opacity: 1; box-shadow: 0 0 30px rgba(197, 141, 131, 0.75); }
+      100% { transform: scale(0.95); opacity: 0.8; }
+    }
+
+    .animate-float {
+      animation: float-slow 6s ease-in-out infinite;
+    }
+    .animate-pulse-subtle {
+      animation: pulse-subtle 4s ease-in-out infinite;
+    }
+    .animate-pulse-ring {
+      animation: pulse-ring 3s ease-in-out infinite;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #FFF8F5;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #D9AEB7;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #C58D83;
+    }
+  </style>
+</head>
+<body class="bg-[#FFF8F5] text-[#684650] font-sans selection:bg-[#F3DDE1] selection:text-[#49313D] relative overflow-x-hidden">
+
+  <!-- ==========================================
+      0. COVER / INTRODUCTION COVER PAGE
+  ========================================== -->
+  <div id="cover-page" class="fixed inset-0 z-50 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-white via-[#FFF8F5] to-[#F3DDE1] flex flex-col items-center justify-center p-4 sm:p-6 text-center overflow-y-auto transition-opacity duration-700">
+    <!-- Luminous Ambient Background Glow -->
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#D9AEB7]/25 rounded-full blur-3xl pointer-events-none animate-pulse-subtle"></div>
+    
+    <!-- Cover Card Container -->
+    <div class="max-w-md w-full bg-white/90 backdrop-blur-xl border border-[#C58D83]/30 rounded-3xl p-8 sm:p-10 shadow-[0_20px_60px_rgba(73,49,61,0.15)] hover:shadow-[0_0_50px_rgba(197,141,131,0.45)] transition-all duration-500 relative z-10 my-auto">
+      
+      <!-- Holy Cross Header Icon -->
+      <div class="flex justify-center mb-4">
+        <div class="p-3 bg-[#F3DDE1] rounded-full shadow-xs">
+          <svg class="w-8 h-8 text-[#C58D83]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="2" x2="12" y2="22" />
+            <line x1="5" y1="8" x2="19" y2="8" />
+          </svg>
+        </div>
+      </div>
+
+      <p class="font-sans-clean text-xs uppercase tracking-[0.3em] text-[#98717B] font-semibold mb-2">
+        You are cordially invited to
+      </p>
+
+      <h1 class="font-serif-elegant text-3xl sm:text-4xl font-bold text-[#684650] tracking-tight mb-2">
+        The Holy Baptism Ceremony
+      </h1>
+
+      <p class="font-serif-elegant italic text-lg text-[#98717B] mb-6">
+        of our beloved child
+      </p>
+
+      <!-- Baby Portrait with Glow Ring -->
+      <div class="relative w-40 h-40 sm:w-48 sm:h-48 mx-auto mb-6 rounded-full p-1.5 bg-gradient-to-tr from-[#C58D83] via-[#D9AEB7] to-white shadow-[0_0_30px_rgba(197,141,131,0.45)] animate-pulse-ring">
+        <img
+          id="cover-baby-photo"
+          src="https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&q=80&w=800"
+          alt="Zarah Mathew"
+          style="width:100%; height:100%; object-fit:cover; border-radius:100%; border:2px solid white;"
+        />
+      </div>
+
+      <!-- Baby Name Banner -->
+      <h2 id="cover-baby-name" class="font-script text-4xl sm:text-5xl text-[#C58D83] mb-2 glow-text">
+        Zarah Mathew
+      </h2>
+
+      <p id="cover-date" class="font-serif-elegant text-sm text-[#98717B] font-medium mb-8">
+        Saturday, February 14th, 2026
+      </p>
+
+      <!-- Open Invitation Button -->
+      <button
+        id="open-invitation-btn"
+        type="button"
+        onclick="handleOpenInvitation()"
+        class="w-full bg-[#49313D] hover:bg-[#30212C] text-white py-4 px-6 rounded-2xl font-sans-clean text-xs font-semibold tracking-[0.25em] uppercase transition-all duration-300 shadow-[0_8px_25px_rgba(73,49,61,0.35)] hover:shadow-[0_0_35px_rgba(197,141,131,0.7)] transform hover:-translate-y-1 hover:scale-102 flex items-center justify-center space-x-3 group cursor-pointer relative z-30"
+      >
+        <svg class="w-4 h-4 group-hover:animate-bounce" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+          <polyline points="22,6 12,13 2,6"/>
+        </svg>
+        <span>OPEN INVITATION</span>
+      </button>
+
+    </div>
+
+    <div class="mt-6 relative z-10">
+      <span class="font-serif-elegant text-xs text-[#98717B] tracking-widest italic">
+        Tap above to view full details
+      </span>
+    </div>
+  </div>
+
+  <!-- ==========================================
+      MAIN INVITATION CONTENT
+  ========================================== -->
+  <div id="main-website" class="hidden">
+    
+    <!-- NAVBAR -->
+    <nav class="fixed top-0 left-0 right-0 z-40 bg-white/90 backdrop-blur-md border-b border-[#C58D83]/20 shadow-[0_4px_20px_rgba(197,141,131,0.12)] transition-all duration-300">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+        
+        <!-- Brand / Baby Name -->
+        <div class="flex items-center space-x-2">
+          <a href="#home" class="font-script text-3xl sm:text-4xl text-[#C58D83] hover:text-[#49313D] transition-colors glow-text">
+            <span class="nav-baby-name">Zarah Mathew</span>
+          </a>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <div class="hidden md:flex items-center space-x-8 font-sans-clean text-xs tracking-[0.2em] font-semibold text-[#684650]">
+          <a href="#home" class="nav-link relative py-2 transition-all hover:text-[#C58D83] hover:scale-105">HOME</a>
+          <a href="#child" class="nav-link relative py-2 transition-all hover:text-[#C58D83] hover:scale-105">CHILD</a>
+          <a href="#gallery" class="nav-link relative py-2 transition-all hover:text-[#C58D83] hover:scale-105">GALLERY</a>
+          <a href="#when-where" class="nav-link relative py-2 transition-all hover:text-[#C58D83] hover:scale-105">WHEN & WHERE</a>
+          <a href="#wish" class="nav-link relative py-2 transition-all hover:text-[#C58D83] hover:scale-105">WISH</a>
+
+          <button id="show-cover-btn" class="bg-[#F3DDE1] hover:bg-[#49313D] hover:text-white text-[#684650] px-3 py-1.5 rounded-xl transition-all shadow-xs text-[10px] tracking-wider cursor-pointer border border-[#C58D83]/30">
+            COVER INTRO
+          </button>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <div class="md:hidden flex items-center space-x-2">
+          <button id="show-cover-btn-mobile" class="bg-[#F3DDE1] text-[#684650] p-2 rounded-lg text-xs font-semibold border border-[#C58D83]/30">
+            Cover
+          </button>
+          <button id="hamburger-btn" class="p-2 text-[#684650] hover:text-[#C58D83] hover:bg-[#F3DDE1]/60 rounded-lg transition-all focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Mobile Dropdown Menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-lg border-b border-[#C58D83]/20 px-6 py-6 space-y-3 shadow-2xl">
+        <a href="#home" class="mobile-nav-link block font-sans-clean text-sm tracking-widest py-2 px-3 rounded-lg text-[#684650] hover:bg-[#F3DDE1]">HOME</a>
+        <a href="#child" class="mobile-nav-link block font-sans-clean text-sm tracking-widest py-2 px-3 rounded-lg text-[#684650] hover:bg-[#F3DDE1]">CHILD</a>
+        <a href="#gallery" class="mobile-nav-link block font-sans-clean text-sm tracking-widest py-2 px-3 rounded-lg text-[#684650] hover:bg-[#F3DDE1]">GALLERY</a>
+        <a href="#when-where" class="mobile-nav-link block font-sans-clean text-sm tracking-widest py-2 px-3 rounded-lg text-[#684650] hover:bg-[#F3DDE1]">WHEN & WHERE</a>
+        <a href="#wish" class="mobile-nav-link block font-sans-clean text-sm tracking-widest py-2 px-3 rounded-lg text-[#684650] hover:bg-[#F3DDE1]">WISH</a>
+      </div>
+    </nav>
+
+    <!-- SECTION 1: HERO -->
+    <section id="home" class="min-h-screen pt-28 pb-16 md:pt-36 md:pb-24 flex items-center relative overflow-hidden bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-white via-[#FFF8F5] to-[#F3DDE1]/40">
+      <div class="absolute top-1/4 left-10 w-96 h-96 bg-[#D9AEB7]/20 rounded-full blur-3xl pointer-events-none animate-pulse-subtle"></div>
+      
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          
+          <!-- Left Text Content -->
+          <div class="lg:col-span-7 text-center lg:text-left space-y-6">
+            <div class="inline-flex items-center space-x-2 text-[#C58D83] bg-white/80 px-4 py-1.5 rounded-full border border-[#C58D83]/30 shadow-xs backdrop-blur-xs">
+              <svg class="w-5 h-5 text-[#C58D83]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="5" y1="8" x2="19" y2="8"/></svg>
+              <span class="font-serif-elegant italic text-lg tracking-wider text-[#98717B]">With Divine Blessings</span>
+              <svg class="w-5 h-5 text-[#C58D83]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="5" y1="8" x2="19" y2="8"/></svg>
+            </div>
+
+            <div class="space-y-2">
+              <p class="font-serif-elegant text-xl sm:text-2xl text-[#98717B] font-medium tracking-wide">
+                Join us for the
+              </p>
+              <h1 class="font-serif-elegant text-4xl sm:text-6xl lg:text-7xl font-bold text-[#684650] tracking-tight leading-none drop-shadow-xs">
+                Baptism Ceremony
+              </h1>
+              <p class="font-script text-4xl sm:text-5xl text-[#C58D83] pt-1 glow-text">
+                of our little one
+              </p>
+            </div>
+
+            <div class="py-2">
+              <div class="inline-block border border-[#C58D83]/50 py-3 px-6 bg-white/90 rounded-xl shadow-[0_4px_20px_rgba(197,141,131,0.2)] backdrop-blur-md hover:border-[#C58D83] hover:scale-105 transition-all duration-300">
+                <p class="font-sans-clean text-sm sm:text-base tracking-[0.25em] text-[#684650] font-semibold uppercase">
+                  Saturday, February 14th, 2026
+                </p>
+              </div>
+            </div>
+
+            <p class="font-serif-elegant text-lg text-[#98717B] max-w-xl mx-auto lg:mx-0">
+              Join us in celebrating the spiritual beginning of our dearly beloved daughter.
+            </p>
+
+            <!-- Countdown Timer -->
+            <div class="pt-6">
+              <p class="font-sans-clean text-xs uppercase tracking-widest text-[#98717B] mb-4 font-semibold">
+                Counting down to the holy day
+              </p>
+              <div class="grid grid-cols-4 gap-2 sm:gap-4 max-w-md mx-auto lg:mx-0">
+                <div class="bg-white/90 border border-[#C58D83]/30 backdrop-blur-md rounded-2xl p-3 sm:p-4 text-center shadow-[0_4px_15px_rgba(197,141,131,0.15)] hover:shadow-[0_0_25px_rgba(197,141,131,0.45)] hover:border-[#C58D83] hover:-translate-y-1.5 transition-all duration-300">
+                  <span id="timer-days" class="font-serif-elegant text-2xl sm:text-4xl font-bold text-[#C58D83] block leading-none glow-text">00</span>
+                  <span class="font-sans-clean text-[10px] sm:text-xs tracking-widest text-[#684650] font-medium block mt-1">DAYS</span>
+                </div>
+                <div class="bg-white/90 border border-[#C58D83]/30 backdrop-blur-md rounded-2xl p-3 sm:p-4 text-center shadow-[0_4px_15px_rgba(197,141,131,0.15)] hover:shadow-[0_0_25px_rgba(197,141,131,0.45)] hover:border-[#C58D83] hover:-translate-y-1.5 transition-all duration-300">
+                  <span id="timer-hours" class="font-serif-elegant text-2xl sm:text-4xl font-bold text-[#C58D83] block leading-none glow-text">00</span>
+                  <span class="font-sans-clean text-[10px] sm:text-xs tracking-widest text-[#684650] font-medium block mt-1">HOURS</span>
+                </div>
+                <div class="bg-white/90 border border-[#C58D83]/30 backdrop-blur-md rounded-2xl p-3 sm:p-4 text-center shadow-[0_4px_15px_rgba(197,141,131,0.15)] hover:shadow-[0_0_25px_rgba(197,141,131,0.45)] hover:border-[#C58D83] hover:-translate-y-1.5 transition-all duration-300">
+                  <span id="timer-mins" class="font-serif-elegant text-2xl sm:text-4xl font-bold text-[#C58D83] block leading-none glow-text">00</span>
+                  <span class="font-sans-clean text-[10px] sm:text-xs tracking-widest text-[#684650] font-medium block mt-1">MINS</span>
+                </div>
+                <div class="bg-white/90 border border-[#C58D83]/30 backdrop-blur-md rounded-2xl p-3 sm:p-4 text-center shadow-[0_4px_15px_rgba(197,141,131,0.15)] hover:shadow-[0_0_25px_rgba(197,141,131,0.45)] hover:border-[#C58D83] hover:-translate-y-1.5 transition-all duration-300">
+                  <span id="timer-secs" class="font-serif-elegant text-2xl sm:text-4xl font-bold text-[#C58D83] block leading-none glow-text">00</span>
+                  <span class="font-sans-clean text-[10px] sm:text-xs tracking-widest text-[#684650] font-medium block mt-1">SECS</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Photo Frame -->
+          <div class="lg:col-span-5 relative flex justify-center">
+            <div class="relative p-4 sm:p-5 bg-white shadow-[0_10px_40px_rgba(197,141,131,0.2)] hover:shadow-[0_0_50px_rgba(197,141,131,0.5)] rounded-2xl max-w-md w-full border border-[#C58D83]/30 transform rotate-1 hover:rotate-0 hover:scale-[1.03] transition-all duration-500 group">
+              <div class="relative overflow-hidden rounded-xl aspect-[4/5] shadow-inner">
+                <img
+                  src="https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&q=80&w=800"
+                  alt="Zarah Mathew"
+                  class="w-full h-full object-cover transform group-hover:scale-108 transition-transform duration-700"
+                />
+              </div>
+              <div class="text-center pt-4 pb-2">
+                <span class="nav-baby-name font-script text-3xl sm:text-4xl text-[#C58D83] group-hover:text-[#49313D] transition-colors glow-text">
+                  Zarah Mathew
+                </span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: CHILD -->
+    <section id="child" class="py-20 md:py-32 bg-white relative border-t border-[#C58D83]/20">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-10 lg:gap-16 items-center">
+          
+          <!-- Circular Photo Frame -->
+          <div class="md:col-span-5 flex flex-col items-center">
+            <div class="relative group cursor-pointer">
+              <div class="absolute -inset-4 rounded-full border-2 border-dashed border-[#D9AEB7] animate-pulse-subtle group-hover:border-[#C58D83] transition-colors"></div>
+              <div class="w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-white shadow-[0_10px_30px_rgba(197,141,131,0.25)] group-hover:shadow-[0_0_40px_rgba(197,141,131,0.55)] relative z-10 transition-all duration-500">
+                <img
+                  src="https://images.unsplash.com/photo-1544126592-807ade215a0b?auto=format&fit=crop&q=80&w=800"
+                  alt="Baby Zarah with Parents"
+                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+              </div>
+            </div>
+            <div class="mt-6 text-center">
+              <span class="font-script text-5xl text-[#C58D83] hover:text-[#49313D] transition-colors block cursor-default glow-text">
+                Love & Blessings
+              </span>
+            </div>
+          </div>
+
+          <!-- Description Text -->
+          <div class="md:col-span-7 text-center md:text-left space-y-5">
+            <div class="inline-block px-4 py-1.5 bg-[#F3DDE1] rounded-full text-[#684650] text-xs font-sans-clean font-semibold tracking-widest uppercase shadow-xs border border-[#C58D83]/30">
+              Meet Our Beloved Baby
+            </div>
+
+            <h2 class="nav-baby-name font-script text-5xl sm:text-6xl text-[#C58D83] leading-tight hover:text-[#49313D] transition-colors cursor-default glow-text">
+              Zarah Mathew
+            </h2>
+
+            <p class="font-serif-elegant text-xl sm:text-2xl text-[#98717B] font-medium italic">
+              Baby of Ajmal John & Sonet Antu
+            </p>
+
+            <div class="w-16 h-[2px] bg-[#C58D83]/60 mx-auto md:mx-0 my-4 shadow-[0_0_8px_#C58D83]"></div>
+
+            <p class="font-serif-elegant text-lg sm:text-xl text-[#684650] leading-relaxed max-w-xl">
+              "With hearts full of profound gratitude to Almighty God, we warmly invite you to witness the Holy Baptism of our precious child and bless her with your loving prayers."
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: GALLERY -->
+    <section id="gallery" class="py-20 md:py-32 bg-[#FFF8F5] relative border-t border-[#C58D83]/20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+          <span class="font-sans-clean text-xs tracking-[0.25em] text-[#98717B] uppercase font-semibold">
+            Sweet Memories
+          </span>
+          <h2 class="font-serif-elegant text-4xl sm:text-5xl font-bold text-[#684650]">
+            Photo Gallery
+          </h2>
+          <div class="w-12 h-[2px] bg-[#C58D83] mx-auto shadow-[0_0_8px_#C58D83]"></div>
+        </div>
+
+        <!-- Asymmetrical Masonry Grid Layout -->
+        <div id="gallery-grid" class="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6 auto-rows-[160px] sm:auto-rows-[280px]">
+          <!-- Injected dynamically via JavaScript -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- LIGHTBOX MODAL -->
+    <div id="lightbox-modal" class="hidden fixed inset-0 z-50 bg-[#30212C]/90 backdrop-blur-md flex items-center justify-center p-4">
+      <button id="lightbox-close" class="absolute top-6 right-6 text-white/80 hover:text-white p-2.5 rounded-full bg-white/10 hover:bg-white/20 transition-all shadow-md hover:scale-110 cursor-pointer">
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+
+      <button id="lightbox-prev" class="absolute left-4 text-white/80 hover:text-white p-3 rounded-full bg-white/10 hover:bg-white/20 transition-all shadow-md hover:scale-110 cursor-pointer">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+      </button>
+
+      <div class="max-w-4xl max-h-[85vh] overflow-hidden rounded-2xl shadow-[0_0_50px_rgba(197,141,131,0.5)] border border-white/20">
+        <img id="lightbox-img" src="" alt="" class="max-h-[80vh] w-auto mx-auto object-contain" />
+        <p id="lightbox-title" class="text-center text-white font-serif-elegant text-xl mt-4 glow-text"></p>
+      </div>
+
+      <button id="lightbox-next" class="absolute right-4 text-white/80 hover:text-white p-3 rounded-full bg-white/10 hover:bg-white/20 transition-all shadow-md hover:scale-110 cursor-pointer">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+      </button>
+    </div>
+
+    <!-- SECTION 4: WHEN & WHERE -->
+    <section id="when-where" class="py-20 md:py-32 bg-white relative border-t border-[#C58D83]/20">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+          <span class="font-sans-clean text-xs tracking-[0.25em] text-[#98717B] uppercase font-semibold">
+            Event Details
+          </span>
+          <h2 class="font-serif-elegant text-4xl sm:text-5xl font-bold text-[#684650]">
+            When & Where
+          </h2>
+          <div class="w-12 h-[2px] bg-[#C58D83] mx-auto shadow-[0_0_8px_#C58D83]"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          
+          <!-- Ceremony Card -->
+          <div class="bg-[#FFF8F5] p-8 sm:p-10 rounded-3xl border border-[#C58D83]/30 shadow-sm hover:shadow-[0_0_30px_rgba(197,141,131,0.35)] hover:border-[#C58D83] hover:-translate-y-1.5 transition-all duration-300">
+            <span class="font-sans-clean text-xs tracking-widest text-[#98717B] uppercase font-semibold">SACRAMENT OF BAPTISM</span>
+            <h3 class="font-serif-elegant text-3xl font-bold text-[#684650] mt-1 mb-4">Baptism Service</h3>
+            
+            <div class="space-y-3 text-sm font-sans-clean text-[#684650]/90">
+              <p><strong>Date:</strong> Saturday, February 14th, 2026</p>
+              <p><strong>Time:</strong> 10:00 AM IST</p>
+              <p><strong>Church:</strong> St. Mary's Cathedral</p>
+              <p class="text-xs text-[#98717B]">Marine Drive, Broadway, Kochi, Kerala 682031</p>
+            </div>
+
+            <div class="mt-8 pt-6 border-t border-[#C58D83]/20 flex flex-wrap gap-3">
+              <a href="https://maps.google.com/?q=St.+Mary's+Cathedral+Kochi" target="_blank" class="bg-[#49313D] hover:bg-[#30212C] text-white px-4 py-2.5 rounded-xl font-sans-clean text-xs font-semibold tracking-wider transition-all shadow-sm">
+                GET DIRECTIONS
+              </a>
+              <button id="add-calendar-btn" class="bg-white hover:bg-[#F3DDE1] text-[#684650] px-4 py-2.5 rounded-xl font-sans-clean text-xs font-semibold tracking-wider border border-[#C58D83]/30 transition-all cursor-pointer">
+                ADD TO CALENDAR
+              </button>
+            </div>
+          </div>
+
+          <!-- Reception Card -->
+          <div class="bg-[#FFF8F5] p-8 sm:p-10 rounded-3xl border border-[#C58D83]/30 shadow-sm hover:shadow-[0_0_30px_rgba(197,141,131,0.35)] hover:border-[#C58D83] hover:-translate-y-1.5 transition-all duration-300">
+            <span class="font-sans-clean text-xs tracking-widest text-[#98717B] uppercase font-semibold">CELEBRATION LUNCH</span>
+            <h3 class="font-serif-elegant text-3xl font-bold text-[#684650] mt-1 mb-4">Fellowship & Reception</h3>
+            
+            <div class="space-y-3 text-sm font-sans-clean text-[#684650]/90">
+              <p><strong>Date:</strong> Saturday, February 14th, 2026</p>
+              <p><strong>Time:</strong> 12:30 PM Onwards</p>
+              <p><strong>Venue:</strong> St. Mary's Parish Hall & Gardens</p>
+              <p class="text-xs text-[#98717B]">Adjacent to Church Grounds</p>
+            </div>
+
+            <div class="mt-8 pt-6 border-t border-[#C58D83]/20">
+              <p class="font-serif-elegant italic text-[#98717B] text-base">
+                "Please join us for lunch and warm fellowship immediately following the church service."
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 5: WISH / BLESSINGS -->
+    <section id="wish" class="py-20 md:py-32 bg-[#FFF8F5] relative border-t border-[#C58D83]/20">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-12 space-y-4">
+          <span class="font-sans-clean text-xs tracking-[0.25em] text-[#98717B] uppercase font-semibold">Prayers & Love</span>
+          <h2 class="font-serif-elegant text-4xl sm:text-5xl font-bold text-[#684650]">Send Your Blessings</h2>
+          <p class="font-serif-elegant text-lg text-[#98717B]">Share your heartfelt blessings and prayers for little Zarah Mathew on this holy occasion.</p>
+
+          <button id="open-blessing-modal-btn" class="bg-[#49313D] hover:bg-[#30212C] text-white px-8 py-4 rounded-2xl font-sans-clean text-xs font-semibold tracking-widest transition-all shadow-[0_4px_20px_rgba(73,49,61,0.3)] hover:shadow-[0_0_25px_rgba(197,141,131,0.6)] transform hover:-translate-y-1 cursor-pointer">
+            SEND BLESSINGS
+          </button>
+        </div>
+
+        <!-- Blessings Feed Container -->
+        <div id="blessings-feed" class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-12">
+          <!-- Dynamically populated via JS -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- BLESSINGS MODAL -->
+    <div id="blessing-modal" class="hidden fixed inset-0 z-50 bg-[#30212C]/60 backdrop-blur-sm flex items-center justify-center p-4">
+      <div class="bg-white rounded-3xl p-6 sm:p-8 max-w-lg w-full border border-[#C58D83]/30 shadow-[0_0_50px_rgba(197,141,131,0.4)] relative">
+        <button id="close-blessing-modal-btn" class="absolute top-6 right-6 text-[#684650]/60 hover:text-[#684650] p-2 hover:bg-[#F3DDE1] rounded-full transition-colors cursor-pointer">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+
+        <div class="text-center mb-6">
+          <span class="font-script text-4xl text-[#C58D83] block glow-text">Blessings for Zarah Mathew</span>
+          <h3 class="font-serif-elegant text-2xl font-bold text-[#684650]">Write Your Message</h3>
+        </div>
+
+        <form id="blessing-form" class="space-y-4">
+          <div>
+            <label class="block font-sans-clean text-xs font-semibold text-[#98717B] uppercase tracking-wider mb-2">Your Name</label>
+            <input type="text" id="blessing-name" required placeholder="e.g., Uncle John & Family" class="w-full px-4 py-3 rounded-xl border border-[#C58D83]/30 bg-[#FFF8F5] focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#C58D83] text-sm text-[#684650]" />
+          </div>
+          <div>
+            <label class="block font-sans-clean text-xs font-semibold text-[#98717B] uppercase tracking-wider mb-2">Your Blessing</label>
+            <textarea id="blessing-msg" required rows="4" placeholder="May God bless little Zarah Mathew..." class="w-full px-4 py-3 rounded-xl border border-[#C58D83]/30 bg-[#FFF8F5] focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#C58D83] text-sm text-[#684650]"></textarea>
+          </div>
+          <button type="submit" class="w-full bg-[#49313D] hover:bg-[#30212C] text-white py-3.5 rounded-xl font-sans-clean text-xs font-semibold tracking-widest transition-all cursor-pointer">
+            SUBMIT BLESSING
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#30212C] text-white pt-16 pb-12 text-center relative overflow-hidden border-t border-[#C58D83]/30">
+      <div class="max-w-4xl mx-auto px-4 space-y-4">
+        <h2 class="font-serif-elegant text-3xl font-bold text-[#F3DDE1]">Baptism Ceremony</h2>
+        <p class="font-serif-elegant italic text-[#D9AEB7]">"We humbly invite your presence and prayers on this blessed day."</p>
+        <p class="font-sans-clean text-xs text-[#98717B] mt-6">© 2026 Zarah Mathew Baptism Ceremony. All rights reserved.</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- JavaScript Application Logic -->
+  <script>
+    // Configuration Data
+    const GALLERY_PHOTOS = [
+      { id: 1, src: "https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&q=80&w=900", title: "Serene Moments" },
+      { id: 2, src: "https://images.unsplash.com/photo-1555252333-9f8e92e65df9?auto=format&fit=crop&q=80&w=900", title: "Sweet Smiles" },
+      { id: 3, src: "https://images.unsplash.com/photo-1544126592-807ade215a0b?auto=format&fit=crop&q=80&w=900", title: "Tiny Hands, Big Blessing" },
+      { id: 4, src: "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?auto=format&fit=crop&q=80&w=900", title: "In Loving Arms" },
+      { id: 5, src: "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&q=80&w=900", title: "Purity & Grace" },
+      { id: 6, src: "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&q=80&w=900", title: "Joyful Beginnings" }
+    ];
+
+    let blessingsList = [
+      { id: 1, name: "Grandpa John & Grandma Mary", message: "May God’s light shine upon sweet Zarah Mathew every single day of her life.", date: "Yesterday" },
+      { id: 2, name: "Uncle David & Aunt Sarah", message: "Sending all our love and blessings on this sacred milestone!", date: "2 days ago" }
+    ];
+
+    let currentLightboxIdx = 0;
+
+    // DOM Elements
+    const coverPage = document.getElementById('cover-page');
+    const mainWebsite = document.getElementById('main-website');
+    const openInvitationBtn = document.getElementById('open-invitation-btn');
+    const showCoverBtn = document.getElementById('show-cover-btn');
+    const showCoverBtnMobile = document.getElementById('show-cover-btn-mobile');
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    // Cover Page Controls - Direct trigger helper function
+    function handleOpenInvitation() {
+      if (!coverPage || !mainWebsite) return;
+      coverPage.style.opacity = '0';
+      setTimeout(() => {
+        coverPage.classList.add('hidden');
+        mainWebsite.classList.remove('hidden');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }, 400);
+    }
+
+    if (openInvitationBtn) {
+      openInvitationBtn.addEventListener('click', handleOpenInvitation);
+    }
+
+    const openCover = () => {
+      if (!coverPage || !mainWebsite) return;
+      coverPage.style.opacity = '1';
+      coverPage.classList.remove('hidden');
+      mainWebsite.classList.add('hidden');
+    };
+    if (showCoverBtn) showCoverBtn.addEventListener('click', openCover);
+    if (showCoverBtnMobile) showCoverBtnMobile.addEventListener('click', openCover);
+
+    // Mobile Menu Toggle
+    hamburgerBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Countdown Timer Calculation
+    const targetDate = new Date("2026-02-14T10:00:00").getTime();
+    function updateTimer() {
+      const now = new Date().getTime();
+      const diff = targetDate - now;
+
+      if (diff > 0) {
+        document.getElementById('timer-days').innerText = String(Math.floor(diff / (1000 * 60 * 60 * 24))).padStart(2, '0');
+        document.getElementById('timer-hours').innerText = String(Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).padStart(2, '0');
+        document.getElementById('timer-mins').innerText = String(Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
+        document.getElementById('timer-secs').innerText = String(Math.floor((diff % (1000 * 60)) / 1000)).padStart(2, '0');
+      }
+    }
+    setInterval(updateTimer, 1000);
+    updateTimer();
+
+    // Render Gallery
+    const galleryGrid = document.getElementById('gallery-grid');
+    GALLERY_PHOTOS.forEach((photo, idx) => {
+      const card = document.createElement('div');
+      // Responsive span mapping to support 2 columns on mobile and 3 on desktop
+      const spanMap = [
+        "col-span-1 row-span-2",            // 1: Tall
+        "col-span-2 lg:col-span-2 row-span-1", // 2: Wide
+        "col-span-1 row-span-1",            // 3: Compact
+        "col-span-2 lg:col-span-2 row-span-1", // 4: Wide
+        "col-span-1 row-span-2",            // 5: Tall
+        "col-span-1 row-span-1"             // 6: Compact
+      ];
+      const spanClass = spanMap[idx % spanMap.length];
+
+      card.className = `group cursor-pointer relative overflow-hidden rounded-2xl sm:rounded-3xl bg-white shadow-md border border-[#C58D83]/30 hover:shadow-[0_0_35px_rgba(197,141,131,0.45)] hover:border-[#C58D83] hover:-translate-y-1.5 transition-all duration-500 ${spanClass}`;
+      card.innerHTML = `
+        <img src="${photo.src}" alt="${photo.title}" class="w-full h-full object-cover transform group-hover:scale-108 transition-transform duration-700" />
+        <div class="absolute inset-0 bg-gradient-to-t from-[#30212C]/90 via-[#98717B]/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-3 sm:p-6 text-white backdrop-blur-[1px]">
+          <span class="font-sans-clean text-[9px] sm:text-[10px] uppercase tracking-[0.2em] text-[#F3DDE1] font-semibold mb-0.5">View Photograph</span>
+          <h3 class="font-serif-elegant text-base sm:text-2xl font-bold leading-tight">${photo.title}</h3>
+        </div>
+      `;
+      card.addEventListener('click', () => openLightbox(idx));
+      galleryGrid.appendChild(card);
+    });
+
+    // Lightbox Controls
+    const lightboxModal = document.getElementById('lightbox-modal');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxTitle = document.getElementById('lightbox-title');
+
+    function openLightbox(idx) {
+      currentLightboxIdx = idx;
+      lightboxImg.src = GALLERY_PHOTOS[idx].src;
+      lightboxTitle.innerText = GALLERY_PHOTOS[idx].title;
+      lightboxModal.classList.remove('hidden');
+    }
+
+    document.getElementById('lightbox-close').addEventListener('click', () => {
+      lightboxModal.classList.add('hidden');
+    });
+
+    document.getElementById('lightbox-prev').addEventListener('click', () => {
+      currentLightboxIdx = (currentLightboxIdx - 1 + GALLERY_PHOTOS.length) % GALLERY_PHOTOS.length;
+      openLightbox(currentLightboxIdx);
+    });
+
+    document.getElementById('lightbox-next').addEventListener('click', () => {
+      currentLightboxIdx = (currentLightboxIdx + 1) % GALLERY_PHOTOS.length;
+      openLightbox(currentLightboxIdx);
+    });
+
+    // Blessings Modal & Form Logic
+    const blessingModal = document.getElementById('blessing-modal');
+    const blessingsFeed = document.getElementById('blessings-feed');
+
+    document.getElementById('open-blessing-modal-btn').addEventListener('click', () => {
+      blessingModal.classList.remove('hidden');
+    });
+
+    document.getElementById('close-blessing-modal-btn').addEventListener('click', () => {
+      blessingModal.classList.add('hidden');
+    });
+
+    function renderBlessings() {
+      blessingsFeed.innerHTML = '';
+      blessingsList.forEach(item => {
+        const div = document.createElement('div');
+        div.className = "bg-white p-6 rounded-2xl border border-[#C58D83]/30 shadow-sm hover:shadow-[0_0_25px_rgba(197,141,131,0.25)] transition-all";
+        div.innerHTML = `
+          <div class="flex items-center justify-between mb-2">
+            <h4 class="font-serif-elegant text-xl font-bold text-[#684650]">${item.name}</h4>
+            <span class="font-sans-clean text-xs text-[#98717B]">${item.date}</span>
+          </div>
+          <p class="font-serif-elegant italic text-[#684650]/80 text-base">"${item.message}"</p>
+        `;
+        blessingsFeed.appendChild(div);
+      });
+    }
+
+    renderBlessings();
+
+    document.getElementById('blessing-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('blessing-name').value;
+      const msg = document.getElementById('blessing-msg').value;
+
+      blessingsList.unshift({
+        id: Date.now(),
+        name: name,
+        message: msg,
+        date: "Just now"
+      });
+
+      renderBlessings();
+      blessingModal.classList.add('hidden');
+      document.getElementById('blessing-form').reset();
+    });
+
+    // Add to Calendar .ics file generator
+    document.getElementById('add-calendar-btn').addEventListener('click', () => {
+      const icsData = [
+        "BEGIN:VCALENDAR",
+        "VERSION:2.0",
+        "BEGIN:VEVENT",
+        "SUMMARY:Holy Baptism Ceremony of Zarah Mathew",
+        "DESCRIPTION:Join us for the Holy Baptism Ceremony of Zarah Mathew.",
+        "LOCATION:St. Mary's Cathedral, Marine Drive, Broadway, Kochi, Kerala 682031",
+        "DTSTART:20260214T043000Z",
+        "DTEND:20260214T070000Z",
+        "END:VEVENT",
+        "END:VCALENDAR"
+      ].join("\n");
+
+      const blob = new Blob([icsData], { type: "text/calendar;charset=utf-8;" });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.setAttribute("download", "Zarah_Mathew_Baptism.ics");
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    });
+  </script>
+</body>
+</html>
